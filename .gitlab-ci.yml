@@ -1,0 +1,39 @@
+stages:
+  - 🏗️build
+  - 🧪tests
+  - 📦push
+  - 🚀deploy
+
+include:
+  - project: 'iut_inf63/generic-ci' # Reference to the gitlab project containing the generic ci scripts
+    ref: 'main' # Reference to the gitlab ci generic project branch
+    file:
+      - 'build/.docker-build.yml' # Name of the file to include 
+      - 'deploy/.docker-deploy.yml' # Name of the file to include 
+
+
+push-image:
+  extends: .build-and-push-docker-image
+  stage: 📦push
+  variables: 
+    DOCKERFILE_RELATIVE_PATH: docker/Dockerfile
+    DOCKERFILE_CONTEXT_PATH: .
+    DESTINATION_REGISTRY_IMAGE_NAME: codefirst-dev.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+    DESTINATION_REGISTRY_IMAGE_VERSION: main
+  allow_failure: true
+  rules:
+    - when: manual
+
+deploy-image:
+  extends: .deploy-image
+  stage: 🚀deploy
+  variables:
+    CONTAINER_NAME: $CI_PROJECT_NAME
+    CONTAINER_HTTP_PORT: 80
+    CONTAINER_IMAGE_PATH: codefirst-dev.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:main
+    NAMESPACE_TOKEN: $KUBE_NAMESPACE_TOKEN
+    NAMESPACE_NAME: $CI_PROJECT_NAMESPACE
+  allow_failure: true
+  needs:
+    - push-image
+
