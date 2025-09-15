@@ -13,7 +13,7 @@ include:
 
 tests-sonar:
   stage: 🧪tests
-  image: codefirst-dev.iut.uca.fr/iut_inf63/base-cicd/java21-slim:main
+  image: codefirst.iut.uca.fr/iut_inf63/base-cicd/java21-slim:main
   variables:
     SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
     GIT_DEPTH: "0"
@@ -33,7 +33,7 @@ push-image:
   variables: 
     DOCKERFILE_RELATIVE_PATH: docker/Dockerfile
     DOCKERFILE_CONTEXT_PATH: .
-    DESTINATION_REGISTRY_IMAGE_NAME: codefirst-dev.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+    DESTINATION_REGISTRY_IMAGE_NAME: codefirst.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
     DESTINATION_REGISTRY_IMAGE_VERSION: main
   allow_failure: true
   when: on_success
@@ -46,7 +46,7 @@ deploy-image:
   variables:
     CONTAINER_NAME: $CI_PROJECT_NAME
     CONTAINER_HTTP_PORT: 80
-    CONTAINER_IMAGE_PATH: codefirst-dev.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:main
+    CONTAINER_IMAGE_PATH: codefirst.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:main
     NAMESPACE_TOKEN: $KUBE_NAMESPACE_TOKEN
     NAMESPACE_NAME: $CI_PROJECT_NAMESPACE
   allow_failure: true
