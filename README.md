@@ -1,3 +1,4 @@
+<<<<<<< ours
 # Portfolio BUT Informatique — Version moderne (multi-pages)
 
 Template de portfolio **multi-pages**, plus moderne, avec contenu **lorem ipsum** et nombreux emplacements d’illustrations.
@@ -23,3 +24,21 @@ Template de portfolio **multi-pages**, plus moderne, avec contenu **lorem ipsum*
 2. Remplacer les placeholders d’images par vraies captures/photos/schémas.
 3. Remplacer `cv_lorem.pdf` par votre CV final.
 4. Déployer sur Code#0 et vérifier l’URL publique.
+=======
+# Portfolio développeur web (HTML/CSS statique)
+
+Structure multi-pages conforme à la demande :
+- `index.html`
+- `about.html`
+- `projects.html`
+- `cursus.html`
+- `interests.html`
+- `contact.html`
+- `assets/css/main.css`
+- `assets/img/` (placeholders SVG, non binaires)
+
+## Personnalisation
+- Remplacez `[Ton Nom]`, `[Prénom Nom]`, les textes et les dates.
+- Remplacez les images placeholders dans `assets/img`.
+- Utilisez `cv.html` pour présenter votre CV au format page web.
+>>>>>>> theirs
