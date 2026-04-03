@@ -7,10 +7,116 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-inner">    <a class="brand" href="index.html">Barbara Najib – Développeur BUT Informatique</a>
-<nav aria-label="Navigation principale"><ul class="nav-list"><li><a href="index.html">Accueil</a></li><li><a href="about.html" aria-current="page">À propos</a></li><li><a href="projects.html">Projets</a></li><li><a href="cursus.html">Cursus</a></li><li><a href="interests.html">Centres d’intérêt</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
-<main><div class="container"><section class="section"><h1>À propos de moi</h1><div class="grid-2"><div><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat sem et nibh volutpat, quis varius nisl placerat. Je m’intéresse au développement d’applications web et je recherche une opportunité pour continuer à progresser en équipe.</p><ul><li>Spécialités : HTML, CSS, JavaScript, SQL</li><li>Qualités : rigueur, autonomie, communication</li><li>Objectif : stage / alternance en développement web</li></ul><a class="cv-link" href="cv.html">Voir mon CV</a></div><figure class="card"><img src="assets/img/portrait.svg" alt="Photo de profil placeholder"><figcaption><!-- TODO: Remplacer portrait.svg par votre photo -->Photo de profil (placeholder).</figcaption></figure></div></section></div></main>
-<footer class="site-footer"><div class="container"><div class="footer-links"><a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="projects.html">Projets</a><a href="cursus.html">Cursus</a><a href="interests.html">Centres d’intérêt</a><a href="contact.html">Contact</a></div><p>Email: ton.email@example.com • GitHub: github.com/ton-profil • LinkedIn: linkedin.com/in/ton-profil</p></div></footer>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Barbara Najib – Développeur BUT Informatique</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html" aria-current="page">À propos</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="cursus.html">Cursus</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="about section" id="about">
+        <h1>À propos de moi</h1>
+
+        <div class="grid-2">
+          <article class="card">
+            <h2>Présentation</h2>
+            <p>
+              Je suis passionné d’informatique, et plus particulièrement de programmation,
+              que je souhaite transformer en futur métier. Je développe aussi des projets
+              personnels pendant mon temps libre, ce qui me permet d’apprendre en continu
+              et de renforcer mes bases techniques.
+            </p>
+            <p>
+              Quand je suis impliqué dans un sujet, je cherche à accomplir les tâches avec
+              sérieux, en m’adaptant au niveau de difficulté et en gardant une progression
+              régulière.
+            </p>
+            <a class="cv-link" href="resume.pdf">Voir mon CV</a>
+          </article>
+
+          <figure class="card">
+            <img src="assets/img/ma-photo.jpg" alt="Photo de profil de Barbara Najib (placeholder)">
+          </figure>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h2>Programmation</h2>
+            <p>
+              J’aime construire des interfaces web propres, compréhensibles et utiles,
+              avec une attention particulière portée à la lisibilité du code.
+            </p>
+            <figure>
+              <img src="assets/img/prog.png" alt="Illustration d'un environnement de développement">
+            </figure>
+          </article>
+
+          <article class="card">
+            <h2>Discipline & sport</h2>
+            <p>
+              La musculation m’aide à rester discipliné au quotidien, à mieux organiser
+              mon temps et à garder une constance dans mes objectifs.
+            </p>
+            <figure>
+              <img src="assets/img/musculation.jpeg" alt="Illustration de discipline sportive">
+            </figure>
+          </article>
+
+          <article class="card">
+            <h2>Voyages & langues</h2>
+            <p>
+              J’aime voyager à l’étranger, notamment au Maroc, mon pays d’origine, ce qui me permet de découvrir une nouvelle culture et ouvrir mon champs de vision.
+              Je suis aussi trilingue, je parle arabe, anglais et français.
+            </p>
+            <figure>
+              <img src="assets/img/voyage.jpg" alt="Illustration voyage et ouverture culturelle">
+            </figure>
+          </article>
+        </div>
+
+        <article class="card" style="margin-top: 1rem;">
+          <h2>Expériences professionnelles</h2>
+          <p>
+            J’ai travaillé pendant un mois dans la castration du maïs durant l’été 2021,
+            ce qui a constitué ma première expérience du monde professionnel. J’ai ensuite
+            travaillé dans la supérette « la Mondiale » sur des missions de rayonnage,
+            de gestion basique de stock et d’exécution de tâches encadrées.
+          </p>
+          <p>
+            Ces expériences m’ont appris la ponctualité, l’organisation, le respect des
+            consignes et une conduite professionnelle plus solide.
+          </p>
+          <figure>
+            <img src="assets/img/lamondiale.jpg" alt="Illustration d'une expérience professionnelle de terrain">
+          </figure>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+    <p>
+      Email:
+      <a href="mailto:najib.barbara@etu.uca.fr">najib.barbara@etu.uca.fr</a>
+      • GitHub:
+      <a href="https://github.com/njbarbara">https://github.com/njbarbara</a>
+      • LinkedIn:
+      <a href="https://www.linkedin.com/in/najib-barbara-a5b64a316/">
+        https://www.linkedin.com/in/najib-barbara-a5b64a316/
+      </a>
+    </p>
+      </div>
+  </footer>
 </body>
 </html>

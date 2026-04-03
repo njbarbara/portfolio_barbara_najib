@@ -7,10 +7,219 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-inner">    <a class="brand" href="index.html">Barbara Najib – Développeur BUT Informatique</a>
-<nav aria-label="Navigation principale"><ul class="nav-list"><li><a href="index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="projects.html" aria-current="page">Projets</a></li><li><a href="cursus.html">Cursus</a></li><li><a href="interests.html">Centres d’intérêt</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
-<main><div class="container"><section class="section"><h1>Projets</h1><article class="card"><h2>Projet technique – Saé 165h</h2><p><strong>Nom du projet :</strong> [Nom du projet Saé]</p><p><strong>Contexte :</strong> BUT Informatique, Saé 165h, travail en équipe.</p><p><strong>Stack :</strong> HTML/CSS, JavaScript, PHP, SQL (à adapter).</p><p><!-- TODO: Remplacer ce paragraphe (8 à 10 lignes max) -->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ce projet avait pour objectif de concevoir une application répondant à un besoin métier précis. Nous avons développé les fonctionnalités essentielles, optimisé certains traitements et structuré les données pour assurer la cohérence globale. Ce travail m’a permis de mobiliser plusieurs compétences : C1 (développement), C2 (optimisation), C4 (gestion des données), C5 (conduite de projet), C6 (collaboration).</p><div class="grid-3"><figure><img src="assets/img/sae-1.svg" alt="Capture écran projet Saé 1"><figcaption>Capture d’écran – interface principale</figcaption></figure><figure><img src="assets/img/sae-2.svg" alt="Capture écran projet Saé 2"><figcaption>Schéma de données / architecture</figcaption></figure><figure><img src="assets/img/sae-3.svg" alt="Capture écran projet Saé 3"><figcaption>Vue fonctionnalité clé</figcaption></figure></div></article></section>
-<section class="section"><article class="card"><h2>Projet(s) personnel(s)</h2><p><strong>Nom du projet :</strong> [Nom projet personnel]</p><p><!-- TODO: Remplacer ce paragraphe (5 à 10 lignes max) -->Lorem ipsum dolor sit amet, consectetur adipiscing elit. J’ai réalisé ce projet pour approfondir la qualité du code, l’ergonomie de l’interface et la structuration des pages. Ce travail m’a appris à mieux organiser les composants visuels, améliorer la lisibilité et documenter les choix techniques.</p><div class="grid-3"><figure><img src="assets/img/perso-1.svg" alt="Projet personnel capture 1"><figcaption>Écran d’accueil</figcaption></figure><figure><img src="assets/img/perso-2.svg" alt="Projet personnel capture 2"><figcaption>Page fonctionnalité</figcaption></figure><figure><img src="assets/img/perso-3.svg" alt="Projet personnel capture 3"><figcaption>Amélioration UI/UX</figcaption></figure></div></article></section></div></main>
-<footer class="site-footer"><div class="container"><div class="footer-links"><a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="projects.html">Projets</a><a href="cursus.html">Cursus</a><a href="interests.html">Centres d’intérêt</a><a href="contact.html">Contact</a></div><p>Email: ton.email@example.com • GitHub: github.com/ton-profil • LinkedIn: linkedin.com/in/ton-profil</p></div></footer>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Barbara Najib – Développeur BUT Informatique</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projects.html" aria-current="page">Projets</a></li>
+        <li><a href="cursus.html">Cursus</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="section">
+      <h1>Projets</h1>
+
+      <article class="card">
+        <h2>SAE 2A – Wolves of Democracy</h2>
+        <p><strong>Adaptation numérique du jeu Les Loups‑Garous de Thiercelieux</strong></p>
+        <p>
+          Wolves of Democracy est un jeu de société en ligne multi‑plateformes,
+          composé d’une application web de jeu, d’un espace d’administration web
+          et d’une application mobile. Le projet reprend les mécaniques Loups‑Garous
+          (villageois vs loups, alternance jour/nuit, discussions) et a été mené
+          par une équipe de 5 FI + 1 FA, encadrée par M. Restituito et Mme Pouclet.
+        </p>
+
+        <section>
+          <h3>Contexte & règles</h3>
+          <p>
+            Une partie réunit entre 6 et 15 joueurs avec deux rôles principaux :
+            villageois et loup‑garou. Le nombre de loups varie selon le nombre de
+            participants (1 à 3 loups). Les villageois doivent éliminer tous les
+            loups, tandis que les loups doivent éliminer tous les villageois.
+          </p>
+          <p>
+            Les trois demandes clés du client étaient : distinguer gentils/méchants,
+            implémenter le cycle jour/nuit, et permettre aux joueurs de parler.
+          </p>
+        </section>
+
+        <section>
+          <h3>Architecture globale</h3>
+          <p>
+            L’architecture repose sur trois clients : application web de jeu,
+            application web d’administration et application mobile. Côté serveur,
+            on retrouve un serveur de jeu temps réel, une API REST centrale,
+            une base de données principale et Redis pour le cache. Les échanges
+            utilisent HTTPS et WebSockets, avec une orchestration autour de l’API
+            centrale qui relie l’ensemble des briques.
+          </p>
+        </section>
+
+        <section>
+          <h3>Détail par composant</h3>
+          <div class="grid-2">
+            <article class="card">
+              <h4>Application web (jeu)</h4>
+              <p><strong>Technos :</strong> PHP, HTML5, Tailwind CSS.</p>
+              <p>
+                Cette interface couvre l’accueil, la liste des lobbies,
+                l’authentification, le profil utilisateur et la gestion des parties.
+                Elle sert de point d’entrée principal pour l’expérience de jeu.
+              </p>
+              <figure>
+                <img src="assets/img/web.png" alt="Placeholder capture application web de jeu">
+                <figcaption>Capture application web de jeu.</figcaption>
+              </figure>
+            </article>
+
+            <article class="card">
+              <h4>Application mobile</h4>
+              <p><strong>Technos :</strong> Android, Kotlin.</p>
+              <p>
+                L’objectif est de rejoindre rapidement une partie depuis smartphone,
+                participer au jeu en mobilité et conserver l’ambiance du jeu de
+                société à distance.
+              </p>
+              <figure>
+                <img src="assets/img/Screenshot 2026-04-03 at 17-50-42 14.jpg (JPEG Image 1920 × 1080 pixels) — Scaled (91%).png" alt="Placeholder capture application mobile">
+                <figcaption>Capture application mobile.</figcaption>
+              </figure>
+            </article>
+
+            <article class="card">
+              <h4>Application d’administration</h4>
+              <p><strong>Technos :</strong> Blazor, C#.</p>
+              <p>
+                Elle permet de superviser les parties, suivre les joueurs et ajuster
+                différents paramètres de configuration pour faciliter le pilotage
+                global de la plateforme.
+              </p>
+              <figure>
+                <img src="assets/img/Screenshot 2026-04-03 at 17-50-07 16.jpg (JPEG Image 1920 × 1080 pixels) — Scaled (91%).png" alt="Placeholder capture application administration">
+                <figcaption>Capture application d’administration.</figcaption>
+              </figure>
+            </article>
+
+            <article class="card">
+              <h4>Serveur de jeu</h4>
+              <p><strong>Technos :</strong> TypeScript, Node.js, Redis.</p>
+              <p>
+                Le serveur gère la logique temps réel, l’attribution des rôles,
+                les tours jour/nuit et la synchronisation entre clients. Redis est
+                utilisé pour le cache et la fluidité des échanges.
+              </p>
+            </article>
+
+            <article class="card">
+              <h4>API REST</h4>
+              <p><strong>Technos :</strong> PHP, Docker, MySQL/MariaDB.</p>
+              <p>
+                L’API est le point central pour les clients. V1 a posé la base,
+                V2 a apporté la conteneurisation Docker, du refactor et une couche
+                d’authentification plus robuste.
+              </p>
+            </article>
+
+            <article class="card">
+              <h4>Base de données</h4>
+              <p><strong>Technos :</strong> MySQL / MariaDB.</p>
+              <p>
+                Elle stocke les comptes, parties, résultats et journaux techniques,
+                afin d’assurer la persistance, la traçabilité et l’analyse des
+                sessions de jeu.
+              </p>
+            </article>
+
+            <article class="card">
+              <h4>Tests & qualité</h4>
+              <p><strong>Outils :</strong> PHPUnit, JUnit 5, Mocha, SonarQube.</p>
+              <p>
+                Des tests unitaires et d’intégration ont été mis en place sur
+                plusieurs composants (serveur, API, etc.), avec des indicateurs de
+                qualité maîtrisés : peu de bugs/vulnérabilités, duplication faible,
+                couverture de tests satisfaisante.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>Organisation & gestion de projet</h3>
+          <p>
+            Le suivi s’est appuyé sur Gantt, WBS, user stories, Kanban (Miro),
+            GitLab, Discord, Google Docs et Google Sheets. La répartition du travail
+            et le suivi des heures prévues/réelles ont permis d’aligner l’équipe et
+            de garder une communication fluide.
+          </p>
+        </section>
+
+        <section class="grid-2">
+          <article>
+            <h3>Difficultés rencontrées</h3>
+            <p>
+              Les principales difficultés ont concerné la découverte de nouvelles
+              technologies, la coordination d’une équipe élargie et la synchronisation
+              des briques web, mobile, serveur, API et base de données.
+            </p>
+          </article>
+          <article>
+            <h3>Ce que le projet nous a apporté</h3>
+            <p>
+              Le projet a renforcé nos compétences techniques (PHP, Node.js/
+              TypeScript, Tailwind, Redis, REST API, Kotlin, Android, MySQL/MariaDB,
+              Docker, principes SOLID) et nos compétences humaines : communication,
+              organisation, collaboration et vision globale multi‑couches.
+            </p>
+          </article>
+        </section>
+
+        <section>
+          <h3>Conclusion</h3>
+          <p>
+            Wolves of Democracy nous a permis de construire une plateforme de jeu
+            cohérente, de prendre en main un large éventail de technologies, et de
+            développer une vision concrète du travail de groupe sur un projet complet.
+          </p>
+        </section>
+    </section>
+    <section class="section">
+      <article class="card">
+        <h2>Projet(s) personnel(s)</h2>
+
+        <p><strong>Nom du projet :</strong> Site de vente de miel « ApiBerkane »</p>
+        <p>
+          J’ai réalisé un site de vente de miel pour mon oncle, apiculteur à Berkane au Maroc.
+          L’objectif était de présenter ses produits, mettre en avant son savoir‑faire familial
+          et faciliter la prise de contact avec les clients. J’ai conçu une page d’accueil
+          mettant en avant des visuels de ruches et de miel, une section listant les différents
+          produits et une partie expliquant l’origine locale et la qualité du miel. Ce projet
+          m’a permis de travailler sur un besoin réel, d’améliorer la structure d’un site vitrine
+          et de soigner l’ergonomie ainsi que le contenu pour des utilisateurs non techniques.
+        </p>
+
+        <div class="grid-3">
+          <figure>
+            <img src="assets/img/miel.png" alt="Page d'accueil du site de vente de miel">
+          </figure>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Email: ton.email@example.com • GitHub: github.com/ton-profil • LinkedIn: linkedin.com/in/ton-profil</p>
+  </div>
+</footer>
 </body>
 </html>
