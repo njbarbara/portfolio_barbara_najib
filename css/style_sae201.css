@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 5vh;
+    padding: 10vh;
+    padding-top: 10vh;
+}
+
+header{
+    display: flex;
+}
+
+#text{
+    width: 70vw;
+    align-self: flex-start;
+    margin-top: 5vh;
+    font-size: 125%;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width : 100%;
+}
+
+#logoetlien{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+#technos{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    width: 15vw;
+    margin-top: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    background-color: grey;
+    border-radius: 60px;
+    border-color: darkgrey;
+    border-width: 2px;
+}
+
+#technostitle{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.imgtechnos{
+    height: 200%;
+    width: 50%;
+}
+
+#liengit{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 5vh;
+}
+
+#logo{
+    height:50%;
+    width: auto;
+}

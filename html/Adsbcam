@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Etudes</title>
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/style_adsbcam.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+            <nav id="menu">
+                <a href="main" class="liens_dans_le_menu">Page principale</a>
+                <div class="dropdown">
+                    <p1 class="liens_dans_le_menu">Projets<p1/>
+                    <div class="dropdown-content">
+                        <a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+                        <a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+                    </div>
+                </div>
+                <a href="Competences" class="liens_dans_le_menu">Compétences</a>
+                <a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+                <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+                <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+                <a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+            </nav>
+            <div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+            </div>
+        </header>
+		
+		<h1 id="title">ADS-B Cam : Caméra de suivi d'avions</h1>
+        <p1 id="text">J'ai réalisé ce projet avec l'aide d'un ami. Le but était de réaliser un setup qui permettrai de faire suivre un avion par une caméra motorisée</p1>
+		<div id="intro">
+            <div id="divlogo">
+                <img src="../images/adsb.HEIC" id="logo"/>
+            </div>
+            <div id="technos">
+                <h2 id="technostitle">Technos<br>utilisées</h2>
+                <img src="../images/go.png" class="imgtechnos"/>
+                <img src="../images/hikvision.png" class="imgtechnos"/>
+                <img src="../images/nanopi.png" class="imgtechnos"/>
+            </div>
+        </div>
+
+        <div id="fct" class="divproj">
+            <p1 id="fctpara" class="paraproj">Pour la plupart, es avions envoient en continu un signal de transpondeur sous la forme d'ADS-B (Automatic Dependant Surveillance Broadcast) qui communique nottament leurs coordonnées et leur altitude.</p1>
+            <img src="../images/schema.png" id="fctimg" class="img"/>
+        </div>
+
+        <div id="antenne" class="divproj">
+            <img src="../images/antenne.HEIC" id="antenneimg" class="img"/>
+            <p1 id="antennepara" class="paraproj">Ces messages sont emis sur la fréquence 1090MHz, pour les capter nous avons donc construit une antenne à base de cable coaxial de telle sorte qu'elle n'écoute que cette fréquence.</p1>
+        </div>
+
+        <div id="boitier" class="divproj">
+            <p1 id="boitierpara" class="paraproj">L'antenne est ensuite reliée à un ordinateur via un dongle qui traite ces données pour que nous puissions les exploiter. En guise d'ordinateur, nous utilisons ici un nanopi r2s qui execute en continu un algorithme en GoLang dont le but est d'effectuer des calculs mathématiques qui permettront d'orienter la caméra correctement, ainsi que de lui envoyer ces infos</p1>
+            <img src="../images/r2s.jpg" id="boitierimg" class="img"/>
+        </div>
+
+        <div id="camera" class="divproj">
+            <img src="../images/ptz.jpg" id="camimg" class="img"/>
+            <p1 id="campara" class="paraproj">Enfin nous avons la caméra IP. Motorisée, elle est controlable manuellement via un navigateur Web, mais également via des requêtes API, nous utilisaons cela pour l'orienter depuis le programme.</p1>
+        </div>
+		
+	
+	</body>
+	
+</html>	

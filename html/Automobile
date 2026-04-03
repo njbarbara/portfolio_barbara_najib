@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie d'images</title>
+    <link rel="stylesheet" href="../css/style_automobile.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <nav id="menu">
+                <a href="main" class="liens_dans_le_menu">Page principale</a>
+                <div class="dropdown">
+                    <p1 class="liens_dans_le_menu">Projets<p1/>
+                    <div class="dropdown-content">
+                        <a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+                        <a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+                    </div>
+                </div>
+                <a href="Competences" class="liens_dans_le_menu">Compétences</a>
+                <a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+                <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+                <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+            </nav>
+            <div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+                <a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+            </div>
+        </header>
+        <div class="gallerie_images">
+            <a href="../images_en_grand/RS4_B6"><img src="../automobile_photos/RS4_B6.png" alt="RS4_B6" title="Audi RS4 B6"></a>
+            <a href="../images_en_grand/RS4"><img src="../automobile_photos/RS4.png" alt="RS4" title="Audi RS4"></a>
+            <a href="../images_en_grand/R8"><img src="../automobile_photos/R8.png" alt="R8" title="Audi R8"></a>
+            <a href="../images_en_grand/IMPREZA"><img src="../automobile_photos/IMPREZA.png" alt="IMPREZA" title="Subaru IMPREZA WRX STI"></a>
+            <a href="../images_en_grand/RS4"><img src="../automobile_photos/RS4.png" alt="RS4" title="Audi RS4"></a>
+            <a href="../images_en_grand/R8"><img src="../automobile_photos/R8.png" alt="R8" title="Audi R8"></a>
+            <a href="../images_en_grand/IMPREZA"><img src="../automobile_photos/IMPREZA.png" alt="IMPREZA" title="Subaru IMPREZA WRX STI"></a>
+            <a href="../images_en_grand/S1"><img src="../automobile_photos/S1.png" alt="S1" title="Audi S1"></a>
+            <a href="../images_en_grand/R8"><img src="../automobile_photos/R8.png" alt="R8" title="Audi R8"></a> 
+            <a href="../images_en_grand/IMPREZA"><img src="../automobile_photos/IMPREZA.png" alt="IMPREZA" title="Subaru IMPREZA WRX STI"></a>
+            <a href="../images_en_grand/S1"><img src="../automobile_photos/S1.png" alt="S1" title="Audi S1"></a>
+            <a href="../images_en_grand/AMG"><img src="../automobile_photos/AMG.png" alt="AMG" title="Mercedes A35 AMG"></a>
+            <a href="../images_en_grand/IMPREZA"><img src="../automobile_photos/IMPREZA.png" alt="IMPREZA" title="Subaru IMPREZA WRX STI"></a>
+            <a href="../images_en_grand/S1"><img src="../automobile_photos/S1.png" alt="S1" title="Audi S1"></a>
+            <a href="../images_en_grand/AMG"><img src="../automobile_photos/AMG.png" alt="AMG" title="Mercedes A35 AMG"></a>
+            <a href="../images_en_grand/RX7"><img src="../automobile_photos/RX7.png" alt="RX7" title="Mazda RX-7"></a>
+        </div>
+
+</body>
+
+</html>

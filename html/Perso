@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+	
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="../css/style_perso.css">
+		<link rel="stylesheet" href="../css/menu.css">
+		<title>Ma vie perso</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	
+	</head>
+	
+	<body>
+		
+
+		
+		<header>
+			<header>
+				<nav id="menu">
+					<a href="main" class="liens_dans_le_menu">Page principale</a>
+					<div class="dropdown">
+						<p1 class="liens_dans_le_menu">Projets<p1/>
+						<div class="dropdown-content">
+							<a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+							<a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+						</div>
+					</div>
+					<a href="Competences" class="liens_dans_le_menu">Compétences</a>
+					<a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+					<a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+					<a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+					<a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+				</nav>
+				<div id="reseaux_fixe">
+					<a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+					<a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+				</div>
+			</header>
+			<h1>Ma vie perso</h1>
+		</header>
+		
+			<table>
+
+				<tr>
+                    <th>Heures</th>
+					<th>Lundi</th>
+                    <th>Mardi</th>
+					<th>Mercredi</th>
+                    <th>Jeudi</th>
+					<th>Vendredi</th>
+                    <th>Samedi</th>
+					<th>Dimanche</th>
+				</tr>
+
+				<tr>
+					<td>6h30</td>
+					<td colspan="7">Réveil</td>
+				</tr>
+
+				<tr>
+					<td>7h30</td>
+					<td rowspan="10">Cours</td>
+					<td rowspan="10">Cours</td>
+					<td rowspan="10">Cours</td>
+					<td rowspan="6">Cours</td>
+					<td rowspan="10">Cours</td>
+					<td rowspan="6">Cours ou Ski (l'hiver hein)</td>
+					<td rowspan="6">Ski l'hiver ou apéro l'été</td>
+				</tr>
+                
+				<tr>
+					<td>8h30</td>
+                </tr>
+				
+				<tr>
+					<td>9h30</td>
+				</tr>
+                                
+				<tr>
+					<td>10h30</td>
+				</tr>
+
+				<tr>
+					<td>11h30</td>
+				</tr> 
+
+				<tr>
+					<td>12h30</td>
+				</tr> 
+
+				<tr>
+					<td>13h30</td>
+					<td>Rentrer et mangeaille</td>
+					<td>Rentrer et mangeaille</td>
+					<td>Rentrer et mangeaille</td>
+				</tr> 
+
+				<tr>
+					<td>14h30</td>
+					<td rowspan="2">Pause</td>
+					<td rowspan="8">Ca dépend</td>
+					<td rowspan="8">Ca dépend</td>
+
+				</tr>
+
+				<tr>
+					<td>15h30</td>
+				</tr>
+
+				<tr>
+					<td>16h30</td>
+					<td rowspan="3">Travail perso</td>
+				</tr>
+
+				<tr>
+					<td>17h30</td>
+					<td rowspan="2">Rentrer et pause</td>
+					<td rowspan="2">Rentrer et pause</td>
+					<td rowspan="2">Rentrer et pause</td>
+					<td rowspan="2">Rentrer et pause</td>
+				</tr>
+
+				<tr>
+					<td>18h30</td>
+				</tr>
+
+				<tr>
+					<td>19h30</td>
+					<td rowspan="3">Travail perso et pause mangeaille</td>
+					<td rowspan="3">Travail perso et pause mangeaille</td>
+					<td rowspan="3">Travail Perso et pause mangeaille</td>
+					<td rowspan="3">Ca dépend</td>
+					<td rowspan="3">Travail perso et pause mangeaille</td>
+				</tr>
+
+				<tr>
+					<td>20h30</td>
+				</tr>
+
+				<tr>
+					<td>21h30</td>
+				</tr>
+
+				<tr>
+					<td>22h30</td>
+					<td colspan="7">Dodo</td>
+				</tr>
+			
+			</table>
+		<a href ="main" id="retour">Revenir</a>
+	</body>
+	
+</html>			

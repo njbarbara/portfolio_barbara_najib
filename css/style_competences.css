@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 5vh;
+    padding-top: 10vh;
+}
+
+header{
+    display: flex;
+}
+
+#competences {
+    border-radius: 50px;
+    border-width: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 5vh;
+}
+
+.competence {
+    background-color: grey;
+    width: 19vw;
+    height: 24vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    border-radius: 150px;
+    justify-content: center;
+}
+
+.competence:hover {
+    background-color: grey;
+    width: 30vw;
+    height: 20vh;
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.competence:hover .paracomp {
+    display: block;
+} 
+.competence:hover .comptitle {
+    height: 60%;
+}
+
+.paracomp {
+    display: none;
+}
+
+.comptitle {
+    margin: 20px;
+    height: 80%;
+    width: auto;
+}

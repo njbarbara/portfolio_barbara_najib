@@ -1,0 +1,8 @@
+<nav id="menu">
+    <a href="main" class="liens_dans_le_menu">Page principale</a>
+    <a href="Projets" class="liens_dans_le_menu">Automobile</a>
+    <a href="Compétences Techniques" class="liens_dans_le_menu">Ski</a>
+    <a href="Compétences Personnelles" class="liens_dans_le_menu">Aviation</a>
+    <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+    <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+</nav>

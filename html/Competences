@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Etudes</title>
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/style_competences.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+            <nav id="menu">
+                <a href="main" class="liens_dans_le_menu">Page principale</a>
+                <div class="dropdown">
+                    <p1 class="liens_dans_le_menu">Projets<p1/>
+                    <div class="dropdown-content">
+                        <a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+                        <a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+                    </div>
+                </div>
+                <a href="Competences" class="liens_dans_le_menu">Compétences</a>
+                <a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+                <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+                <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+                <a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+            </nav>
+            <div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+            </div>
+        </header>
+		
+		<h1>Compétences</h1>
+		<div id="competences">
+                <div class="competence">
+                    <img src="../images/cpp.png" class="comptitle"/>
+                    <p1 class="paracomp">Le C++ est le premier langage objet que j'ai découvert,  je l'apprécie particulièrement et en aie une bonne maîtrise </p1>
+                </div>
+                <div class="competence">
+                    <img src="../images/csharp.png" class="comptitle"/>
+                    <p1 class="paracomp">J'ai appris le C# dans le cadre de mon projet de SAE 2.01 mais il me manque encore des notions à son sujet</p1></div>
+                <div class="competence">
+                    <img src="../images/go.png" class="comptitle"/>
+                    <p1 class="paracomp">J'apprends toujours le GoLang à titre personnel pour des projets comme l'ADS-B Cam, mes compétences dessus sont encore limitées</p1>
+                </div>
+                <div class="competence">
+                    <img src="../images/psql.png" class="comptitle"/>
+                    <p1 class="paracomp">J'ai découvert le SQL<br>avec PostgreSQL cette année et ai déjà réalisé deux projets l'utilisant, je maîtrise assez bien ce langage</p1>
+                </div>
+                <div class="competence">
+                    <img src="../images/html5.png" class="comptitle"/>
+                    <p1 class="paracomp">J'ai appris le HTML il y a quelques annnées et j'ai<br>pu développer mes compétences récemment nottament grâce à ce portfolio</p1>
+                </div>
+                <div class="competence">
+                    <img src="../images/css3.png" class="comptitle"/>
+                    <p1 class="paracomp">J'ai appris le CSS il y a quelques annnées et j'a<br>pu développer mes compétences récemment nottament grâce à ce portfolio</p1>
+                </div>
+        </div>
+		
+	
+	</body>
+	
+</html>	

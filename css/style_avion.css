@@ -1,0 +1,14 @@
+body{
+    font-family: 'Syncopate', sans-serif;
+    background-color: black;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+video{
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}

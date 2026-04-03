@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Ski</title>
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/style_ski.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+            <nav id="menu">
+				<a href="main" class="liens_dans_le_menu">Page principale</a>
+				<a href="Projets" class="liens_dans_le_menu">Projets</a>
+				<a href="CompTech" class="liens_dans_le_menu">Compétences techniques</a>
+				<a href="CompPers" class="liens_dans_le_menu">Compétences personnelles</a>
+				<a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+				<a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+				<a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+			</nav >
+            <div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+            </div>
+        </header>
+		
+		<h1>Blanc comme neige</h1>
+		<a href="main">Y'a pas grand chose d'intéressant ici</a>
+		
+	
+	</body>
+	
+</html>	

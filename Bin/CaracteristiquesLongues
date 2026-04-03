@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Caractéristiques longues</title>
+	
+	</head>
+	
+	<body>
+		
+		
+		<header><h1>Caractéristiques longues</h1></header>
+		
+		<article>
+		
+			<div>
+				<p1>Caractéristiques longues</p1>
+			</div>
+			
+			<div>
+				<a href="main">Revenir</a>
+			</div>
+
+		</article>
+		
+	
+	</body>
+	
+</html>			

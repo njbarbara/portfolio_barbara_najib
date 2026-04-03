@@ -1,0 +1,154 @@
+1. Général : ajustement du body
+
+css
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+    margin: 0; et padding: 0; : Retire les marges et les espaces par défaut que certains navigateurs appliquent automatiquement.
+    width: 100%; : Assure que la largeur du corps de la page occupe tout l'espace disponible horizontalement.
+    height: 100%; : Définit la hauteur du body à 100% de la hauteur de la fenêtre.
+    overflow-x: hidden; : Empêche le défilement horizontal si le contenu dépasse la largeur de la page (par exemple, les images). Cela garde la mise en page propre.
+
+2. Style des sections (div)
+
+css
+
+div {
+    width: 100%;
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+    width: 100%; : Chaque section occupe toute la largeur de la page.
+
+    height: 100vh; : Définit la hauteur de chaque section à 100% de la hauteur de la fenêtre (1 vh = 1% de la hauteur de la fenêtre). Cela signifie que chaque section avec une image de fond occupera tout l'écran, donnant l'impression de "slides" ou de pages distinctes à chaque défilement.
+
+    background-attachment: scroll; : L'image de fond défile normalement avec la page (pas d'effet "parallax" ici, mais cela peut être activé en remplaçant par fixed si souhaité).
+
+    background-size: cover; : Cette propriété fait en sorte que l'image de fond couvre l'intégralité de la section sans se déformer. L'image sera redimensionnée proportionnellement tout en remplissant l'espace, sans laisser de zone vide.
+
+    background-position: center; : Centre l'image de fond dans la section. Si l'image est plus grande que la section, seule la partie centrale sera visible.
+
+    display: flex; : Active Flexbox, un modèle de mise en page qui permet un alignement flexible du contenu. Cela permet de facilement centrer du contenu à l'intérieur d'une section.
+
+    justify-content: center; : Centre le contenu horizontalement (alignement horizontal au centre).
+
+    align-items: center; : Centre le contenu verticalement dans la section (alignement vertical au centre). Combiné avec justify-content: center, cela centre le texte ou le contenu à la fois horizontalement et verticalement.
+
+    text-align: center; : Aligne le texte à l'intérieur de chaque section au centre.
+
+    color: white; : Change la couleur du texte en blanc, ce qui assure qu'il est bien visible sur les images de fond.
+
+    font-size: 2rem; : Augmente la taille du texte pour qu'il soit suffisamment lisible. rem est une unité relative qui prend comme référence la taille de police de l'élément racine (généralement 16px, donc 2rem = 32px).
+
+    overflow: hidden; : Empêche tout débordement de contenu en dehors de la section. Par exemple, si une image ou du texte dépasse la hauteur de la section, cela coupe ce contenu.
+
+3. Image de profil (#photo)
+
+css
+
+#photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 30%;
+    height: 75%;
+}
+
+    position: absolute; : Positionne l'image de profil de manière absolue par rapport à son conteneur parent. Cela signifie que l'image ne suit plus le flux normal de la page et peut être placée où l'on veut.
+
+    top: 0; et right: 0; : Place l'image en haut à droite du conteneur.
+
+    margin: 10px; : Ajoute un petit espace de 10px entre l'image et le bord de la page.
+
+    width: 30%; et height: 75%; : Dimensionne l'image de manière à ce qu'elle prenne 30% de la largeur de la page et 75% de la hauteur.
+
+4. Le header (header)
+
+css
+
+header {
+    height: 100vh;
+    background-image: url("Puy2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+    height: 100vh; : Le header prend également toute la hauteur de la fenêtre (comme les sections suivantes).
+
+    background-image: url("Puy2.jpg"); : Définit l'image de fond pour le header.
+
+    background-size: cover; : Comme pour les autres sections, l'image de fond couvre toute la surface disponible dans le header.
+
+    background-repeat: no-repeat; : Empêche la répétition de l'image si elle est plus petite que la zone de fond.
+
+    background-position: center; : Centre l'image de fond.
+
+    Flexbox : Comme pour les autres sections, Flexbox est utilisé pour centrer le contenu du header à la fois horizontalement et verticalement.
+
+5. Style des articles et du texte (article h2)
+
+css
+
+article h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+    color: white; : Le texte des titres h2 est en blanc pour être bien visible sur les images de fond.
+
+    background-color: rgba(0, 0, 0, 0.5); : Le fond du texte est semi-transparent (le noir avec une opacité de 50%). Cela permet de voir partiellement l'image de fond à travers le texte, tout en rendant le texte plus lisible.
+
+    padding: 10px; : Ajoute un espacement interne autour du texte pour qu'il ne touche pas directement les bords du fond semi-transparent.
+
+    border-radius: 5px; : Ajoute des coins légèrement arrondis à l'arrière-plan du texte pour un effet esthétique.
+
+6. Spécificités des sections avec des images de fond
+
+css
+
+#automobile {
+    background-image: url("RS4.jpg");
+}
+
+#ski {
+    background-image: url("ski.jpg");
+}
+
+#avion {
+    background-image: url("avion.jpg");
+}
+
+    Ces règles spécifiques ajoutent les images de fond pour chaque section (#automobile, #ski, #avion).
+    Comme ces sections héritent des règles générales pour les div, les images seront centrées, couvriront toute la section et ne se répéteront pas.
+
+Résultat attendu :
+
+Après ces modifications :
+
+    Chaque section aura une image de fond qui couvre tout l'écran (100% de la hauteur).
+    Le texte sera centré dans chaque section avec un arrière-plan semi-transparent pour une meilleure lisibilité.
+    Le défilement vertical sera fluide et agréable, avec des sections pleine page comme sur des sites modernes comme celui d'Apple.

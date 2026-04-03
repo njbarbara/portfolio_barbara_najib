@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>R8</title>
+    <LINK rel="stylesheet" type="text/css" href="style_images_en_grand.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="../automobile_photos/RX7.png" alt="RX7" title="Mazda RX-7 FD3S">
+    <a href="../html/Automobile">Retour</a>
+</body>

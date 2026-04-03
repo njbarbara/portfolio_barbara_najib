@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Etudes</title>
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/style_sae201.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+            <nav id="menu">
+                <a href="main" class="liens_dans_le_menu">Page principale</a>
+                <div class="dropdown">
+                    <p1 class="liens_dans_le_menu">Projets<p1/>
+                    <div class="dropdown-content">
+                        <a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+                        <a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+                    </div>
+                </div>
+                <a href="Competences" class="liens_dans_le_menu">Compétences</a>
+                <a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+                <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+                <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+                <a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+            </nav>
+            <div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+            </div>
+        </header>
+		
+		<h1>SAE 2.01 : Programmation d'un jeu avec interface utilisateur</h1>
+        <p1 id="text"><strong>Contexte :</strong><br><br>C'est le projet le plus long que j'ai réalisé jusque là, par équipe de 3 nous devions programmer un jeu appelé Onitama qui est un jeu de plateau japonais s'inspirant des échecs. Une interface graphique pour les utilisateurs était attendue également c'est un projet exploitant les compétences de développement d'applications simple et d'apréhension et construction d'algorithmes<br><br>Au sein de ce projet mes tâches principales étaient la conception et la programmation d'une partie ainsi que la création des pages de sélection des anciennes parties à continuer et l'historique des parties</p1>
+		<div id="intro">
+            <div id="logoetlien">
+                <img src="../images/onitama.webp" id="logo"/>
+                <a href="https://codefirst.iut.uca.fr/git/2025_SAE_1A/SAE_1A_G8_BARBARA_TIXIER_JACQUES_ONITAMA" id="liengit">Accéder au dépôt Git</a>
+            </div>
+            <div id="technos">
+                <h2 id="technostitle">Technos<br>utilisées</h2>
+                <img src="../images/dotnet.png" class="imgtechnos"/>
+                <img src="../images/xaml.webp" class="imgtechnos"/>
+                <img src="../images/csharp.png" class="imgtechnos"/>
+            </div>
+        </div>
+		
+	
+	</body>
+	
+</html>	

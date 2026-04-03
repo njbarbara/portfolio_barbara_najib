@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head> 
+	
+		<meta charset="utf-8">
+
+		<LINK rel="stylesheet" type="text/css" href="../css/style.css">
+		<LINK rel="stylesheet" type="text/css" href="../css/menu.css">
+		<title>MyLife</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+	
+	</head>
+	
+	<body id="id_1">
+		<header id="id_1_1">
+			
+			<div id = "id_1_1_1">
+				<img src="../images/moi3.png" alt="Ma grosse tete la" title="ça pousse" id="id_1_1_1_1"/>
+				<h1 id="id_1_1_1_2">Je m'apelle Esteban Jacques,</br></br>étudiant en première année de BUT Informatique</h1>
+				<img src="../images/mur_noir" alt="Mur noir" title="Mur noir" id="id_1_1_1_3"/>
+			</div>
+
+			<img src="../images/mur.jpg" alt="Mur" title="Mur" id="id_1_1_2"/>
+
+            <nav id="menu">
+                <a href="main" class="liens_dans_le_menu">Page principale</a>
+                <div class="dropdown">
+                    <p1 class="liens_dans_le_menu">Projets<p1/>
+                    <div class="dropdown-content">
+                        <a href="Adsbcam" class="liens_dans_le_menu">ADS-B Cam</a>
+                        <a href="Sae201" class="liens_dans_le_menu">SAE 2.01</a>
+                    </div>
+                </div>
+                <a href="Competences" class="liens_dans_le_menu">Compétences</a>
+                <a href="main#id_1_2" class="liens_dans_le_menu">Passions</a>
+                <a href="Perso" class="liens_dans_le_menu">Vie privée</a>
+                <a href="Etudes" class="liens_dans_le_menu">Vie étudiante</a>
+				<a href="https://drive.google.com/file/d/11QRB2z_E00WfP6aPEQ6zVCP2TODxhGEr/view?usp=sharing" class="liens_dans_le_menu">CV</a>
+            </nav>
+
+			<div id="reseaux_fixe">
+                <a href="http://instagram.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/insta.png" class="logos_réseaux_sociaux_dans_menu" ></a>
+			    <a href="http://x.com" class="liens_réseaux_sociaux_dans_menu"><img src="../images/x.png" class="logos_réseaux_sociaux_dans_menu"></a>
+            </div>
+		</header>
+
+		<section id="id_1_2">
+
+			<h1 id="passionstitle">Mes passions</h1>
+
+			<article id="id_1_2_1" class="conteneur_des_images_de_fond_pour_galeries_et_liens">
+				<a href="Automobile" class="liens_sur_images_de_fond_pour_galeries" id="id_1_2_1_1"><img src="../images/RS4.jpg" alt="automobile_photo" title="automobile_photo" id="id_1_2_1_1_1" class="images_de_fond_pour_galeries"/></a>
+			</article>
+			
+			<article id="id_1_2_2" class="conteneur_des_images_de_fond_pour_galeries_et_liens">
+				<a href="Ski" class="liens_sur_images_de_fond_pour_galeries" id="id_1_2_2_1"><img src="../images/ski.jpg" alt="ski_photo" title="ski_photo" id="id_1_2_2_1_1" class="images_de_fond_pour_galeries"/></a>
+			</article>
+			
+			<article id="id_1_2_3" class="conteneur_des_images_de_fond_pour_galeries_et_liens">
+				<a href="Avion" class="liens_sur_images_de_fond_pour_galeries" id="id_1_2_3_1"><img src="../images/avion.jpg" alt="avion_photo" title="avion_photo" id="id_1_2_3_1_1" class="images_de_fond_pour_galeries"/></a>
+			</article>
+
+		</section>
+		
+		<footer id="id_1_6">
+			
+			<div id="id_1_6_1" class="conteneurs_des_images_et_paragraphes_pour_aller_sur_les_pages_de_vie">
+				<a href="Perso" class="liens_sur_images_pour_aller_sur_les_pages_de_vie" id="id_1_6_1_1"><img src="../images/cafe.jpg" alt="cafe" title="cafe" id="id_1_6_1_1_1" class="illustrations_pour_pages_de_vie"/></a>
+				<h1 id="id_1_6_1_2" class="paragraphes_pour_pages_de_vie">Vie personelle</h1>
+			</div>
+			
+			<div id="id_1_6_2" class="conteneurs_des_images_et_paragraphes_pour_aller_sur_les_pages_de_vie">
+				<h1 id="id_1_6_2_2" class="paragraphes_pour_pages_de_vie">Vie étudiante</h1>
+				<a href="Etudes" class="liens_sur_images_pour_aller_sur_les_pages_de_vie" id="id_1_6_2_1"><img src="../images/amphi" alt="amphi" title="amphi" id="id_1_6_2_1_1" class="illustrations_pour_pages_de_vie"/></a>
+			</div>
+			
+			<aside id="id_1_6_3">
+
+				<h2 id="id_1_6_3_1">Réseaux sociaux</h2>
+				
+				<div id="id_1_6_3_2">
+					<ul id="id_1_6_3_2_1">
+						<li><a href="http://instagram.com"><img src="../images/insta.png" id="id_1_6_3_2_1_1" class="logos_réseaux_sociaux"></a></li>
+						<li><a href="http://x.com"><img src="../images/x.png" id="id_1_6_3_2_1_2" class="logos_réseaux_sociaux"></a></li>
+						<li><a href="http://youtube.com"><img src="../images/youtube.png" id="id_1_6_3_2_1_3" class="logos_réseaux_sociaux"></a></li>
+						<li><a href="http://discord.com"><img src="../images/discord.png" id="id_1_6_3_2_1_4" class="logos_réseaux_sociaux"></a></li>
+					</ul>
+				</div>
+			
+			</aside>
+		
+		</footer>
+		
+
+	</body>
+
+	
+</html>			

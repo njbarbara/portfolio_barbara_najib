@@ -1,3 +1,2 @@
-# HTML/CSS Template
+# site_portfolio_qui_marche
 
-A simple template for a web site.

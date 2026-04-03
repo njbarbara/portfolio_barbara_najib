@@ -1,0 +1,32 @@
+header{
+    display: flex;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 5vh;;
+}
+
+.gallerie_images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 65%;
+}
+
+.gallerie_images img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gallerie_images img:hover {
+    transform: scale(1.05);
+}

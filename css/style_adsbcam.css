@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 5vh;
+    padding: 10vh;
+    padding-top: 10vh;
+}
+
+header{
+    display: flex;
+}
+
+
+#title{
+    align-self: flex-start;
+}
+
+#text{
+    width: 70vw;
+    align-self: flex-start;
+    margin-top: 5vh;
+    font-size: 125%;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width : 100%;
+}
+
+#divlogo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+#technos{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    width: 15vw;
+    height:32vw;
+    margin-top: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    background-color: grey;
+    border-radius: 60px;
+    border-color: darkgrey;
+    border-width: 2px;
+}
+
+#technostitle{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.imgtechnos{
+    height: 100%;
+    width: 80%;
+    margin-top: 5vh;
+}
+
+#logo{
+    margin-top: 6vh;
+    align-self: flex-end;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 70vw;
+}
+
+.img{
+    height:40vh;
+    border-radius: 100px;
+    margin-top: 14vh;
+}
+
+#antenneimg{
+    height: 60vh;
+}
+
+.divproj{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.paraproj{
+    width: 50vw;
+    margin-top: 10vw;
+    font-size: 150%;
+}
+
+#antennepara{
+    margin-left: 2vw;
+}
+
+#campara{
+    margin-left: 2vw;
+}

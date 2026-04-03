@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>S1</title>
+    <LINK rel="stylesheet" type="text/css" href="style_images_en_grand.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="../automobile_photos/S1.png" alt="S1" title="Audi S1">
+    <a href="../html/Automobile">Retour</a>
+</body>

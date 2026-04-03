@@ -1,0 +1,19 @@
+body{
+    margin-top: 10vh;
+    font-family: 'Syncopate', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+#div_form{
+    background-color: grey;
+    width: 500px;
+    padding: 40px;
+    border-radius: 10vh;
+}

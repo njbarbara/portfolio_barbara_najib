@@ -1,0 +1,287 @@
+#photo {
+    height: 85vh; /* L'image prend toute la hauteur de la fenêtre */
+    width: auto; /* Laisse la largeur s'adapter automatiquement à la hauteur */
+    rotate: 320deg;
+    transform: scaleX(-1);
+    z-index:0;
+
+}
+
+#a{
+    margin-left:95%;
+    z-index:2;
+}
+
+header {
+    height: 100vh; /* Header prend aussi tout l'écran */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(51, 45, 45);
+    border: dashed green;
+    flex-wrap: wrap;
+}
+
+#header_wall{
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    right: 0vw;
+    background-color:rgb(73, 73, 73);
+    box-shadow: -30px 0 15px rgba(0, 0, 0, 0.5); /* Ombre de 25px à droite */
+    z-index: 3;
+    border: dashed red;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+CSS COMPLET =============================================================================================================
+
+
+
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction:column;
+}
+
+/* Style pour chaque section avec image de fond */
+.background {
+    width: 100%;                    /* Chaque div prend tt la largeur de l'écra */
+    height: 100vh;                  /* Chaque div prend tt la hauteur de l'écran */
+    background-attachment: scroll;  /* Permet de "rattacher" les images au site ce qui crée un défilement d'image un peu comme apple */
+    background-size: cover;         /* L'image de fond couvre toute et se redimensionne auto pour garder ses proportions la div */
+    background-position: center;    /* Centre background dans la div */
+    display: flex;                  /* Aide à la mise en colonne des background mais j'en sais pas plus */
+    justify-content: center;        /* Centrer horizontalement le txt dans une div*/
+    align-items: center;            /* Centrer verticalement le txt dans une div*/
+    text-align: center;             /* Grace a flexbox inutile*/
+    color: white;                 /* Couleur de la div */
+    font-size: 2rem;                /* Après recherche, dépend des browsers mais 1 rem représente 1 * font-size de la racine qui est 16px en général */
+    overflow: hidden;               /* Empèche de défiler horizontalement si les images dépassent sur les côtés de la fenêtre */
+    z-index:2;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#header_wall{
+    width: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30vw;
+    background-color: rgb(73, 73, 73)
+}
+
+#photo{
+    position:relative;
+    rotate: 320deg;
+    transform: scaleX(-1);
+    height: 100vh;
+    width:auto;
+    justify-self: flex-start;
+    z-index:-1;
+    right: -65px;
+    top: 8vh;
+    right:200px;
+}
+
+.pages{
+    z-index: 1;
+}
+
+#automobile {
+    background-image: url("RS4.jpg");
+}
+
+#ski {
+    background-image: url("ski.jpg");
+}
+
+#avion {
+    background-image: url("avion.jpg");
+}
+
+#informatique{
+    background-image: url("matrix4k.jpg");
+    display:flex;
+}
+
+#gradient{
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    align-self:flex-end;
+}
+
+.titleBackground{
+    color: rgba(255, 255, 255, 0.596);
+    background-color: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent derrière le texte */
+    font-size: 10vh;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.titleBackground:hover{
+    color: white;
+    background-color: rgba(0, 0, 0); /* Ajoute un fond semi-transparent derrière le texte */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#titleInformatique{
+    position: absolute;
+    align-self:center;
+}
+
+.logo{
+    height: 50px;
+    width: auto; 
+}
+
+#testdiv{
+    width: 100%;                    /* Chaque div prend tt la largeur de l'écra */
+    height: 100vh;                  /* Chaque div prend tt la hauteur de l'écran */
+    display:flex;
+    align-items:flex-start;
+}
+
+#imgtest{
+    height:100vh;
+    width:100%;
+    size: cover;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+
+#piedPage{
+    background: linear-gradient(black, rgb(73, 73, 73));
+    height: 120vh;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    flex-direction:column;
+    padding-bottom: 5vh;
+    padding-top: 20vh;
+}
+
+.pages{
+    color: rgb(73, 73, 73);
+    font-size: 10vh;
+    align-self: baseline;
+    justify-self: space-around;
+    text-decoration: none;
+}
+
+.illustrations{
+    height: 30vh;
+    border-radius: 20%;
+}
+
+#cafe:hover{
+    filter: brightness(60%);
+}
+
+#amphi:hover{
+    filter: brightness(60%);
+}
+
+cafe{
+    margin-left:8vw;
+    float: right;
+}
+
+amphi{
+    margin-right:8vw;
+}
+
+divpages{
+    width: 100vw;
+    display:flex;
+    padding-top:0;
+}
+
+titleillustrations{
+    color: white;
+    margin:0;
+    padding:0;
+    font-size: 300%;
+    display: flex;
+    margin: 5%
+}
+
+paraperso{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+paraetudes{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#asidetitle{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    border: dotted blue;
+}
+
+#reseauxtitle{
+    text-align: center;
+    justify-content: space-around;
+}
+
+#liens{
+
+    width:100vw;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ #testdiv{
+    width: 100%;                    /* Chaque div prend tt la largeur de l'écra */
+    height: 100vh;                  /* Chaque div prend tt la hauteur de l'écran */
+    display:flex;
+    align-items:flex-start;
+}
+
+#imgtest{
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    overflow-x: hidden;
+    object-fit: contain;
+}
