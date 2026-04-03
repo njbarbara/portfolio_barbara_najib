@@ -1,34 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>One incredible styled html page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio BUT Informatique multi-pages - modèle lorem ipsum">
+  <title>Accueil | Portfolio BUT</title>
   <link rel="stylesheet" href="mycoolstyle.css">
 </head>
-
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="site-shell">
+  <header class="top">
+    <span class="badge">Portfolio multi-pages</span>
+    <h1>Lorem Ipsum — Nom Prénom</h1>
+    <p>Template personnalisable conforme aux attendus BUT.</p>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="cursus.html">Cursus</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="centres-interet.html">Centres d’intérêt</a></li>
+        <li><a href="cv.html">CV PDF</a></li>
+        <li><a href="sae.html">Projet Saé</a></li>
+        <li><a href="projet-personnel.html">Projet perso</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Navigation menu -->
-<ul class="navbar">
-  <li><a href="https://codefirst.iut.uca.fr/home">Code#0</a>
-  <li><a href="http://iut.uca.fr">IUT</a>
-  <li><a href="https://neilyoungarchives.com/">Very good music</a>
-  <li><a href="https://www.youtube.com/watch?v=CY5dTBhRxOA">Very good music too!</a>
-</ul>
+  <main id="contenu" class="grid-2">
+    <section class="panel">
+      <h2>Objectif du portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada, lorem et pulvinar facilisis, sem velit posuere risus, non consequat risus lorem vitae sem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lorem ut nunc consequat aliquet.</p>
+      <a class="cta" href="cursus.html">Voir mon parcours</a>
+    </section>
 
-<!-- Main Content -->
-<h1>test_portfolio is my first page, and it has got style!</h1>
+    <section class="panel">
+      <h2>Rappels pratiques</h2>
+      <ul>
+        <li>Dépôt et hébergement : Code#0 + container public.</li>
+        <li>Vérification URL depuis un autre navigateur/PC.</li>
+        <li>Envoi de l’adresse finale avec trailing slash si nécessaire.</li>
+      </ul>
+      <img class="hero-image" src="images/CodeFirstLogo.png" alt="Illustration de placeholder à remplacer">
+    </section>
+  </main>
 
-<p>Welcome on this template html/css project 
-
-<p>Very simple, some links, some menu... make it your own
-&hellip;
-
-<p>I have nothing more to say
-
-<!-- my footer -->
-<address>Template made in 2022<br>
-  with Code#0 <a href="https://codefirst.iut.uca.fr/home"><img src="images/CodeFirstLogo.png" alt="Code#0" align="middle" border="0" height="40px"/>
-  </a></address>
-
+  <footer>
+    <p>Ce modèle est entièrement en lorem ipsum pour personnalisation.</p>
+  </footer>
+</div>
 </body>
 </html>
