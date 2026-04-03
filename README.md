@@ -1,25 +1,25 @@
-# Portfolio BUT Informatique — Template multi-pages (lorem ipsum)
+# Portfolio BUT Informatique — Version moderne (multi-pages)
 
-Template **entièrement personnalisable** avec pages séparées (pas one-page), pensé pour les consignes BUT.
+Template de portfolio **multi-pages**, plus moderne, avec contenu **lorem ipsum** et nombreux emplacements d’illustrations.
 
-## Pages incluses
-- `index.html` : accueil + rappels de rendu
-- `cursus.html` : cursus, vocation, projet professionnel
-- `a-propos.html` : présentation personnelle
-- `centres-interet.html` : passions, loisirs, engagements, langues, voyages
-- `cv.html` : CV PDF téléchargeable
-- `sae.html` : projet technique Saé (165h) + illustrations
-- `projet-personnel.html` : projet personnel + figures
-- `competences.html` : compétences C1 à C6
+## Pages
+- `index.html` : accueil + métriques + galerie de mise en avant
+- `cursus.html` : parcours d’études, vocation, projet, timeline
+- `a-propos.html` : profil, valeurs, visuels personnels
+- `centres-interet.html` : loisirs/passion/langues/voyages + galerie
+- `cv.html` : CV téléchargeable en PDF + aperçus
+- `sae.html` : projet Saé (intro/résumé/compétences/illustrations)
+- `projet-personnel.html` : projet personnel enrichi + figures
+- `competences.html` : compétences C1 à C6 en cartes
 - `contact.html` : coordonnées + visuels
 
-## Fichiers support
-- `mycoolstyle.css` : style global responsive
-- `cv_lorem.pdf` : placeholder à remplacer par votre CV final
-- `images/CodeFirstLogo.png` : illustration temporaire
+## Assets
+- `mycoolstyle.css` : thème moderne (cards, gradients, grilles)
+- `cv_lorem.pdf` : placeholder de CV (à remplacer)
+- `images/CodeFirstLogo.png` : image temporaire d’exemple
 
-## Personnalisation
-1. Remplacer tous les blocs lorem ipsum par vos contenus.
-2. Remplacer les blocs d'illustration par vos photos/captures/schémas.
-3. Remplacer `cv_lorem.pdf` par votre CV réel.
-4. Déployer sur Code#0 et tester l’URL publique.
+## Personnalisation rapide
+1. Remplacer tous les textes lorem ipsum.
+2. Remplacer les placeholders d’images par vraies captures/photos/schémas.
+3. Remplacer `cv_lorem.pdf` par votre CV final.
+4. Déployer sur Code#0 et vérifier l’URL publique.
